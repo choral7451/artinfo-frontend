@@ -1,4 +1,5 @@
-export default function Home() {
-    return (<>하이</>
+export default function Index() {
+    return (
+      <>하이</>
   )
 }
