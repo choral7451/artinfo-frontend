@@ -2,7 +2,7 @@ import { SwapLeftOutlined, SwapRightOutlined } from "@ant-design/icons";
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 import { useState } from "react";
-import theme from "styles/theme";
+import theme from "@styles/theme";
 import { v4 as uuidv4 } from 'uuid';
 
 interface IBoardNav {

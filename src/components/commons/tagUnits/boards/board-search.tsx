@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { SearchOutlined } from "@ant-design/icons";
-import theme from "../../../../../styles/theme";
+import theme from "@styles/theme";
 
 const SearchIcon = styled(SearchOutlined)`
   width: 20%;
