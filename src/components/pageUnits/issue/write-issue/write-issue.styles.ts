@@ -1,7 +1,5 @@
 import styled from "@emotion/styled";
 import theme from "@styles/theme";
-import "react-quill/dist/quill.snow.css";
-import dynamic from "next/dynamic";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -40,13 +38,16 @@ export const SelectWrapper = styled.div`
 `;
 
 export const SelectLabel = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid ${theme.colors.primary};
   border-radius: 5px;
-  text-align: center;
   font-size: 16px;
   font-weight: bold;
-  padding: 5px 35px;
   margin-right: 20px;
+  width: 100px;
+  height: 40px;
 `;
 
 export const BoardTitleInput = styled.input`
@@ -68,9 +69,5 @@ export const BoardTitleInput = styled.input`
   }
 `;
 
-const ReactQuill = dynamic(() => import("react-quill"), {ssr: false,});
-export const TextArea = styled(ReactQuill)`
-  margin-bottom: 50px;
-  height: 500px;
-  width: 90%;
-`;
+export const BoardControllerWrapper = styled.div``
+

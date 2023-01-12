@@ -8,7 +8,8 @@ interface IPushSmallButtonMain {
 }
 
 const Button = styled.button`
-  padding: 8px 25px;
+  width: 100px;
+  height: 40px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 14px;

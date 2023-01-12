@@ -9,11 +9,11 @@ interface IPushSmallButtonWhite {
 }
 
 
-function PushSmallButtonWhite(props: IPushSmallButtonWhite) {
+function PushMediumButtonWhite(props: IPushSmallButtonWhite) {
   const Button = styled.button`
     border: 1px solid ${theme.colors.primary};
-    width: 100px;
     height: 40px;
+    width: 200px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
@@ -35,4 +35,4 @@ function PushSmallButtonWhite(props: IPushSmallButtonWhite) {
   );
 }
 
-export default PushSmallButtonWhite;
+export default PushMediumButtonWhite;

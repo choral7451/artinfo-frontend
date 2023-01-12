@@ -1,63 +1,11 @@
 import * as S from './write-issue.styles'
 import BoardCategory from "@tagUnits/boards/write-board/board-category";
+import WriteBoard from "@tagUnits/boards/write-board/write-board";
+import PushMediumButtonWhite from "@tagUnits/buttons/push-medium-button-white";
+import RequestMediumButtonMain from "@tagUnits/buttons/request-medium-button-main";
+import {BoardControllerWrapper} from "./write-issue.styles";
 
 function WriteIssuePresenter() {
-  const BoardModules = {
-    toolbar: {
-      container: [
-        [{ header: [1, 2, 3, 4, 5, 6, false] }],
-        [{ font: [] }],
-        [{ align: [] }],
-        ["bold", "italic", "underline", "strike", "blockquote"],
-        [{ list: "ordered" }, { list: "bullet" }, "link"],
-        [
-          {
-            color: [
-              "#000000",
-              "#e60000",
-              "#ff9900",
-              "#ffff00",
-              "#008a00",
-              "#0066cc",
-              "#9933ff",
-              "#ffffff",
-              "#facccc",
-              "#ffebcc",
-              "#ffffcc",
-              "#cce8cc",
-              "#cce0f5",
-              "#ebd6ff",
-              "#bbbbbb",
-              "#f06666",
-              "#ffc266",
-              "#ffff66",
-              "#66b966",
-              "#66a3e0",
-              "#c285ff",
-              "#888888",
-              "#a10000",
-              "#b26b00",
-              "#b2b200",
-              "#006100",
-              "#0047b2",
-              "#6b24b2",
-              "#444444",
-              "#5c0000",
-              "#663d00",
-              "#666600",
-              "#003700",
-              "#002966",
-              "#3d1466",
-              "custom-color",
-            ],
-          },
-          { background: [] },
-        ],
-        ["link", "image"],
-      ],
-    },
-  };
-
   return (
     <S.Wrapper>
       <S.Title>이슈</S.Title>
@@ -65,13 +13,17 @@ function WriteIssuePresenter() {
         <S.SelectWrapper>
           <S.SelectLabel>분류</S.SelectLabel>
           <BoardCategory
-            elementArr={["이슈", "후기", "자유게시판"]}
+            elementArr={[ "자유게시판", "이슈", "후기"]}
             elementAll={false}
             display={{ pc: "initial", mobile: "initial" }}
           />
         </S.SelectWrapper>
         <S.BoardTitleInput placeholder={'제목을 입력해주세요.'}/>
-        <S.TextArea modules={BoardModules} />
+        <WriteBoard />
+        <BoardControllerWrapper>
+          <RequestMediumButtonMain text={'확인'} marginRight={'20px'}/>
+          <PushMediumButtonWhite text={"취소"} onPush={"/issue"}/>
+        </BoardControllerWrapper>
       </S.WriteBoardWrapper>
     </S.Wrapper>
   );

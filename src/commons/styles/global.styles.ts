@@ -39,6 +39,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+.ql-editor {
+  min-height: 600px;
+}
+
 `;
 
 export default globalStyles;

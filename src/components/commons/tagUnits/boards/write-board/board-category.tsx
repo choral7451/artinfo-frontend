@@ -29,7 +29,7 @@ function BoardCategory(props: ISelect) {
   };
 
   const Wrapper = styled.div`
-    height: 100%;
+    height: 40px;
     overflow: ${dropDown};
     border-radius: 5px;
     width: 100px;
