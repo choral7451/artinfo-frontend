@@ -2,14 +2,14 @@ import styled from "@emotion/styled";
 import theme from "styles/theme";
 import {useRouter} from "next/router";
 
-interface IRequestMediumButtonMain {
+interface IRequestLargeButtonMain {
   text: string
   marginRight?: string
 }
 
-function RequestMediumButtonMain(props: IRequestMediumButtonMain) {
+function RequestLargeButtonMain(props: IRequestLargeButtonMain) {
   const Button = styled.button`
-    width: 200px;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     font-weight: bold;
@@ -31,4 +31,4 @@ function RequestMediumButtonMain(props: IRequestMediumButtonMain) {
   );
 }
 
-export default RequestMediumButtonMain;
+export default RequestLargeButtonMain;

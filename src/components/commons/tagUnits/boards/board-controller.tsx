@@ -7,8 +7,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
-`
-
+`;
 
 function BoardController() {
   return (

@@ -19,7 +19,7 @@ function Anchor(props: IAnchor) {
       cursor: pointer;
       color: ${theme.colors.primary};
     }
-  `
+  `;
 
   const router = useRouter();
   const onClickPush = (url: string) => () => {

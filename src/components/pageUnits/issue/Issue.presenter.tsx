@@ -1,6 +1,6 @@
-import * as S from './issue.styles'
+import * as S from './issue.styles';
 import BoardNav from "@tagUnits/boards/board-nav";
-import MoreLargeButtonMain from "@tagUnits/buttons/more-large-button-main";
+import MoreButtonMain from "@tagUnits/buttons/more-button-main";
 import BoardController from "@tagUnits/boards/board-controller";
 import IssueBoardBody from "@tagUnits/boards/issue-board-body";
 
@@ -13,7 +13,7 @@ function IssuePresenter() {
       />
       <BoardController />
       <IssueBoardBody />
-      <MoreLargeButtonMain text={"더보기"} />
+      <MoreButtonMain text={"더보기"} />
     </S.Wrapper>
   );
 }

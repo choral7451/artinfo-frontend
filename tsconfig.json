@@ -3,7 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@styles/*": ["styles/*"],
-      "@tagUnits/*": ["src/components/commons/tagUnits/*"]
+      "@tagUnits/*": ["src/components/commons/tagUnits/*"],
+      "@src/*": ["src/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

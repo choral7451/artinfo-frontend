@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import theme from "styles/theme";
 
-interface IMoreLargeButtonMain {
+interface IMoreButtonMain {
   text: string
 }
 
@@ -20,13 +20,12 @@ const Button = styled.button`
     border: 1px solid ${theme.colors.primary};
     color: black;
   }
-`
+`;
 
-
-function MoreLargeButtonMain(props: IMoreLargeButtonMain) {
+function MoreButtonMain(props: IMoreButtonMain) {
   return (
     <Button >{props.text}</Button>
   );
 }
 
-export default MoreLargeButtonMain;
+export default MoreButtonMain;
