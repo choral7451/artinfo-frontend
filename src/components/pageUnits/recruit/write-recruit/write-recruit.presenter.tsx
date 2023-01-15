@@ -1,31 +1,32 @@
-import * as S from './write-issue.styles';
+import * as S from "@src/components/pageUnits/issue/write-issue/write-issue.styles";
 import BoardCategory from "@tagUnits/boards/write-board/board-category";
 import WriteBoard from "@tagUnits/boards/write-board/write-board";
-import PushMediumButtonWhite from "@tagUnits/buttons/push-medium-button-white";
+import {BoardControllerWrapper} from "@src/components/pageUnits/issue/write-issue/write-issue.styles";
 import RequestMediumButtonMain from "@tagUnits/buttons/request-medium-button-main";
+import PushMediumButtonWhite from "@tagUnits/buttons/push-medium-button-white";
 
-function WriteIssuePresenter() {
+function WriteRecruitPresenter() {
   return (
     <S.Wrapper>
-      <S.Title>이슈</S.Title>
+      <S.Title>채용</S.Title>
       <S.WriteBoardWrapper>
         <S.SelectWrapper>
           <S.SelectLabel>분류</S.SelectLabel>
           <BoardCategory
-            elementArr={[ "자유게시판", "이슈", "후기"]}
+            elementArr={[ "예술단체", "종교", "기타"]}
             elementAll={false}
             display={{ pc: "initial", mobile: "initial" }}
           />
         </S.SelectWrapper>
         <S.BoardTitleInput placeholder={'제목을 입력해주세요.'}/>
         <WriteBoard />
-        <S.BoardControllerWrapper>
+        <BoardControllerWrapper>
           <RequestMediumButtonMain text={'확인'} marginRight={'20px'}/>
-          <PushMediumButtonWhite text={"취소"} onPush={"/issue"}/>
-        </S.BoardControllerWrapper>
+          <PushMediumButtonWhite text={"취소"} onPush={"/recruit"}/>
+        </BoardControllerWrapper>
       </S.WriteBoardWrapper>
     </S.Wrapper>
   );
 }
 
-export default WriteIssuePresenter;
+export default WriteRecruitPresenter;

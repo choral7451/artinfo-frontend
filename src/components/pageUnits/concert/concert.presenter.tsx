@@ -1,8 +1,8 @@
 import * as S from "./concert.styles";
 import BoardNav from "@tagUnits/boards/board-nav";
-import BoardController from "@tagUnits/boards/board-controller";
-import {BoardControllerWrapper} from "./concert.styles";
 import Poster from "@tagUnits/card/poster";
+import BoardSearch from "@tagUnits/boards/board-search";
+import PushSmallButtonMain from "@tagUnits/buttons/push-small-button-main";
 
 function ConcertPresenter() {
   return (
@@ -11,9 +11,10 @@ function ConcertPresenter() {
       <BoardNav
         nav={["전체", "오케스트라", "합창", "앙상블", "솔로", "기타"]}
       />
-      <BoardControllerWrapper>
-        <BoardController />
-      </BoardControllerWrapper>
+      <S.BoardControllerWrapper>
+        <BoardSearch />
+        <PushSmallButtonMain text={"글쓰기"} onPush={"/concert/write"} />
+      </S.BoardControllerWrapper>
       <S.PosterWrapper>
         <Poster />
         <Poster />

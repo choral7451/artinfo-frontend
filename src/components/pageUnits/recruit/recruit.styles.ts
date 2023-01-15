@@ -16,3 +16,10 @@ export const Title = styled.div`
   font-weight: bold;
   color: black;
 `;
+
+export const BoardControllerWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+`;

@@ -1,5 +1,7 @@
+import HomeContainer from "@src/components/pageUnits/home/home.container";
+
 export default function Index() {
-    return (
-      <>하이</>
-  )
+  return (
+    <HomeContainer />
+  );
 }

@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 56%;
+  width: 60%;
 `;
 
 export const Title = styled.div`
@@ -15,4 +15,11 @@ export const Title = styled.div`
   font-size: 32px;
   font-weight: bold;
   color: black;
+`;
+
+export const BoardControllerWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 `;

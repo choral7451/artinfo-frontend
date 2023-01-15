@@ -19,6 +19,9 @@ export const Title = styled.div`
 
 export const BoardControllerWrapper = styled.div`
   width: 94%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 `;
 
 export const PosterWrapper = styled.div`

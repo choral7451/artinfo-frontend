@@ -38,6 +38,7 @@ function Poster(props: IPoster) {
   `;
 
   const Place = styled.div`
+    margin-top: 2%;
     width: 100%;
   `;
 

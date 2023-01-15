@@ -10,7 +10,7 @@ export default function HeaderUI(props: IHeaderUI) {
     <S.Wrapper>
       <S.HeaderTop>
         <PushSmallButtonWhite text={'로그인'} onPush={'/login'} marginRight={'20px'}/>
-        <PushSmallButtonMain text={'회원가입'} onPush={'/signUp'}/>
+        <PushSmallButtonMain text={'회원가입'} onPush={'/signup'}/>
       </S.HeaderTop>
       <S.HeaderMain>
         <S.HeaderMainContent>
