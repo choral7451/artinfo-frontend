@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import theme from "styles/theme";
+import common from "@styles/commons";
 import {useRouter} from "next/router";
 
 interface IPushSmallButtonWhite {
@@ -8,10 +8,9 @@ interface IPushSmallButtonWhite {
   marginRight?: string
 }
 
-
 function PushSmallButtonWhite(props: IPushSmallButtonWhite) {
   const Button = styled.button`
-    border: 1px solid ${theme.colors.primary};
+    border: 1px solid ${common.colors.primary};
     width: 100px;
     height: 40px;
     border-radius: 5px;
@@ -21,9 +20,9 @@ function PushSmallButtonWhite(props: IPushSmallButtonWhite) {
     
     :hover {
       color: white;
-      background-color: ${theme.colors.primary};
+      background-color: ${common.colors.primary};
     }
-  `
+  `;
   const router = useRouter();
 
   const onClickPush = (url: string) => () => {

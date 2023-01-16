@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { useRouter } from "next/router";
-import theme from "../../../../../styles/theme";
+import common from "@styles/commons";
 
 interface IAnchor {
   text: string;
@@ -17,7 +17,7 @@ function Anchor(props: IAnchor) {
     
     :hover {
       cursor: pointer;
-      color: ${theme.colors.primary};
+      color: ${common.colors.primary};
     }
   `;
 

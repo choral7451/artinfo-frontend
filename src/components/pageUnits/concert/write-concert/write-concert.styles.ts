@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import theme from "@styles/theme";
+import common from "@styles/commons";
 import { TimePicker } from "antd";
 import DatePickenpm from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -27,7 +27,7 @@ export const WriteBoardWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid ${theme.colors.primary};
+  border: 1px solid ${common.colors.primary};
   padding: 30px 0;
   margin: 70px 0;
 `;
@@ -44,7 +44,7 @@ export const SelectLabel = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${theme.colors.primary};
+  border: 1px solid ${common.colors.primary};
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
@@ -56,7 +56,7 @@ export const SelectLabel = styled.div`
 export const BoardTitleInput = styled.input`
   border: none;
   font-size: 20px;
-  border-bottom: 2px solid ${theme.colors.primary};
+  border-bottom: 2px solid ${common.colors.primary};
   width: 90%;
   margin: 50px 0;
   padding: 20px 10px;
@@ -88,14 +88,14 @@ export const InfoTitle = styled.div`
   color: white;
   font-weight: bold;
   border-radius: 5px;
-  background-color: ${theme.colors.primary};
+  background-color: ${common.colors.primary};
 `;
 
 export const InfoInput = styled.input`
   border: none;
   font-size: 16px;
   text-align: center;
-  border-bottom: 2px solid ${theme.colors.primary};
+  border-bottom: 2px solid ${common.colors.primary};
   margin-left: 20px;
   width: 70%;
   :focus {
@@ -116,7 +116,7 @@ export const PickWrapper = styled.div`
 
 export const DatePick = styled(DatePickenpm)`
   text-align: center;
-  border: 1px solid ${theme.colors.primary};
+  border: 1px solid ${common.colors.primary};
   border-radius: 5px;
   width: 200px;
   height: 50px;
@@ -126,7 +126,7 @@ export const DatePick = styled(DatePickenpm)`
 
 export const TimePick = styled(TimePicker)`
   width: 200px;
-  border: 1px solid ${theme.colors.primary};
+  border: 1px solid ${common.colors.primary};
   text-align: center;
   cursor: pointer;
 `;
@@ -149,7 +149,7 @@ export const ImageInputLabel = styled.label`
   color: white;
   font-weight: bold;
   border-radius: 5px;
-  background-color: ${theme.colors.primary};
+  background-color: ${common.colors.primary};
 `;
 
 export const ImageInputWrapper = styled.div`
@@ -158,9 +158,9 @@ export const ImageInputWrapper = styled.div`
   align-items: center;
   width: 80%;
   margin-left: 5%;
-  border-bottom: 2px solid ${theme.colors.primary};
+  border-bottom: 2px solid ${common.colors.primary};
   :hover {
-    background-color: ${theme.colors.primary};
+    background-color: ${common.colors.primary};
     border-radius: 5px;
     color: white;
   }
@@ -183,10 +183,10 @@ export const ImageInput = styled.input`
 export const ImageDeleteButton = styled.button`
   padding: 10px;
   color: white;
-  background-color: ${theme.colors.primary};
+  background-color: ${common.colors.primary};
   border-radius: 5px;
   margin-left: 20px;
-  border: 1px solid ${theme.colors.primary};
+  border: 1px solid ${common.colors.primary};
   :hover {
     color: black;
     background-color: white;

@@ -2,7 +2,7 @@ import { SwapLeftOutlined, SwapRightOutlined } from "@ant-design/icons";
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 import { useState } from "react";
-import theme from "@styles/theme";
+import common from "@styles/commons";
 import { v4 as uuidv4 } from 'uuid';
 
 interface IBoardNav {
@@ -20,7 +20,7 @@ export default function BoardNav(props: IBoardNav) {
     align-items: center;
     width: 100%;
     padding-bottom: 40px;
-    @media (max-width: 575.98px) {
+    @media (max-width: ${common.device.tablet}) {
       display: none;
     }
   `;
@@ -69,10 +69,10 @@ export default function BoardNav(props: IBoardNav) {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: ${theme.colors.primary};
+    color: ${common.colors.primary};
     :hover {
       color: white;
-      background-color: ${theme.colors.primary};
+      background-color: ${common.colors.primary};
       transition: all 0.2s ease-in-out;
     }
   `;
@@ -92,7 +92,6 @@ export default function BoardNav(props: IBoardNav) {
 
   return (
     <>
-      {" "}
       <Wrapper>
         <Arrow>
           <SwapLeftOutlined />

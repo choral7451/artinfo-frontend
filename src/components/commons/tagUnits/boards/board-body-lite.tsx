@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import theme from "@styles/theme";
+import common from "@styles/commons";
 import { v4 as uuidv4 } from "uuid";
 
 interface IBoardBodyLite {
@@ -22,14 +22,14 @@ const Row = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid ${theme.colors.primary};
+  border-bottom: 1px solid ${common.colors.primary};
   height: 80px;
 `;
 
 const Title = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   width: 60%;
 `;
 

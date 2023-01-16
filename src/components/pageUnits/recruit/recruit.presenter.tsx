@@ -4,6 +4,7 @@ import MoreButtonMain from "@tagUnits/buttons/more-button-main";
 import RecruitBoardBody from "@tagUnits/boards/recruit-board-body";
 import BoardSearch from "@tagUnits/boards/board-search";
 import PushSmallButtonMain from "@tagUnits/buttons/push-small-button-main";
+import BoardCategory from "@tagUnits/boards/write-board/board-category";
 
 function RecruitPresenter() {
   return (
@@ -14,7 +15,13 @@ function RecruitPresenter() {
       />
       <S.BoardControllerWrapper>
         <BoardSearch />
-        <PushSmallButtonMain text={"글쓰기"} onPush={"/recruit/write"} />
+        <S.ControllerButtonsWrapper>
+          <BoardCategory
+            elementArr={["전체", "예술단체", "종교", "기타"]}
+            display={{ pc: "none", tablet: "initial"
+            }}/>
+          <PushSmallButtonMain text={"글쓰기"} onPush={"/recruit/write"} />
+        </S.ControllerButtonsWrapper>
       </S.BoardControllerWrapper>
       <RecruitBoardBody />
       <MoreButtonMain text={"더보기"} />

@@ -1,13 +1,13 @@
 import styled from "@emotion/styled";
-import theme from "@styles/theme";
+import common from "@styles/commons";
 
 const Wrapper = styled.div`
   width: 100%;
 `;
 const Header = styled.div`
   width: 100%;
-  border-top: 2px solid ${theme.colors.primary};
-  border-bottom: 2px solid ${theme.colors.primary};
+  border-top: 2px solid ${common.colors.primary};
+  border-bottom: 2px solid ${common.colors.primary};
   font-weight: bold;
   display: flex;
 `;
@@ -25,7 +25,7 @@ const Column = styled.div`
 
 const Row = styled.div`
   display: flex;
-  border-bottom: 1px solid ${theme.colors.primary};
+  border-bottom: 1px solid ${common.colors.primary};
 `;
 
 const RowField = styled.div`

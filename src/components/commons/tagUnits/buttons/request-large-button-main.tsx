@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import theme from "styles/theme";
+import common from "@styles/commons";
 import {useRouter} from "next/router";
 
 interface IRequestLargeButtonMain {
@@ -15,13 +15,13 @@ function RequestLargeButtonMain(props: IRequestLargeButtonMain) {
     font-weight: bold;
     font-size: 14px;
     margin-right: ${props.marginRight};
-    background-color: ${theme.colors.primary};
+    background-color: ${common.colors.primary};
     border: 1px solid white;
     color: white;
 
     :hover {
       background-color: white;
-      border: 1px solid ${theme.colors.primary};
+      border: 1px solid ${common.colors.primary};
       color: black;
     }
   `;

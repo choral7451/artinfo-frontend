@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { SearchOutlined } from "@ant-design/icons";
-import theme from "@styles/theme";
+import common from "@styles/commons";
 
 const SearchIcon = styled(SearchOutlined)`
   width: 20%;
@@ -29,7 +29,7 @@ function BoardSearch() {
     justify-content: center;
     align-items: center;
     width: 300px;
-    border: 1px solid ${theme.colors.primary};
+    border: 1px solid ${common.colors.primary};
     padding: 10px 40px 10px 30px;
     border-radius: 20px;
     @media (max-width: 575.98px) {

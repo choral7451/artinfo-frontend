@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import theme from "@styles/theme";
+import commons from "@styles/commons";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 60%;
-  @media (max-width: 575.98px) {
+  @media (max-width: ${commons.device.tablet}) {
     width: 85%;
   }
 `;
@@ -54,6 +54,6 @@ export const Board = styled.div`
 `;
 
 export const BoardBodyWrapper = styled.div`
-  border-top: 2px solid ${theme.colors.primary};
+  border-top: 2px solid ${commons.colors.primary};
   width: 100%;
 `;

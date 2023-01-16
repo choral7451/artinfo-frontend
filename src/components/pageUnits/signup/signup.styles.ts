@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import theme from "@styles/theme";
+import common from "@styles/commons";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -38,11 +38,11 @@ export const SendVerificationCode = styled.button`
   height: 100%;
   width: 25%;
   margin-left: 5%;
-  border: 1px solid ${theme.colors.primary};
+  border: 1px solid ${common.colors.primary};
   border-radius: 5px;
   :hover {
     color: white;
-    background-color: ${theme.colors.primary};
+    background-color: ${common.colors.primary};
   }
 `;
 
@@ -50,7 +50,7 @@ export const CountNumber = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${theme.colors.primary};
+  border: 1px solid ${common.colors.primary};
   border-radius: 5px;
   margin: 0 3% 0 5%;
   width: 11%;
@@ -64,11 +64,11 @@ export const  CheckVerificationCode = styled.button `
   border-radius: 5px;
   width: 11%;
   color: white;
-  background-color: ${theme.colors.primary};
+  background-color: ${common.colors.primary};
   :hover {
     color: black;
     background-color: white;
-    border: 1px solid ${theme.colors.primary};
+    border: 1px solid ${common.colors.primary};
   }
 `;
 
@@ -115,10 +115,10 @@ export const SignupButton = styled.button`
   height: 50px;
   width: 80%;
   border-radius: 5px;
-  background-color: ${theme.colors.primary};
+  background-color: ${common.colors.primary};
   :hover {
     color: black;
     background-color: white;
-    border: 1px solid ${theme.colors.primary};
+    border: 1px solid ${common.colors.primary};
   }
 `;

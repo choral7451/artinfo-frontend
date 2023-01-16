@@ -1,12 +1,13 @@
 import styled from "@emotion/styled";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
-import theme from "@styles/theme";
+import common from "@styles/commons";
+import commons from "@styles/commons";
 
 interface ISelect {
   elementArr: string[];
   elementAll?: boolean;
-  display: { pc: string; mobile: string };
+  display: { pc?: string; tablet?:string, mobile?: string };
 }
 
 function BoardCategory(props: ISelect) {
@@ -38,14 +39,19 @@ function BoardCategory(props: ISelect) {
     :hover {
       cursor: pointer;
     }
-    @media (max-width: 575.98px) {
+
+    @media (max-width: ${commons.device.tablet}) {
+      display: ${props.display.tablet};
+    }
+    
+    @media (max-width: ${commons.device.mobile}) {
       display: ${props.display.mobile};
     }
   `;
 
   const NavAll = styled.div`
     border-radius: 5px;
-    background-color: ${theme.colors.primary};
+    background-color: ${common.colors.primary};
   `;
 
   const Nav = styled.div`
@@ -61,7 +67,7 @@ function BoardCategory(props: ISelect) {
     width: 100px;
     z-index: 1;
     :hover {
-      border: 1px solid ${theme.colors.primary};
+      border: 1px solid ${common.colors.primary};
       background-color: white;
       color: black;
     }

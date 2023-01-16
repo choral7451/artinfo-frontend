@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import theme from "@styles/theme";
+import common from "@styles/commons";
 
 interface IInput {
   width: string;
@@ -13,7 +13,7 @@ function Input(props: IInput) {
     justify-content: center;
     align-items: center;
     width: ${props.width};
-    border: 1px solid ${theme.colors.primary};
+    border: 1px solid ${common.colors.primary};
     border-radius: 5px;
   `;
 

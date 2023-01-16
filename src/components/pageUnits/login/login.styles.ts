@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import theme from "@styles/theme";
+import common from "@styles/commons";
 
 export const Wrapper = styled.div`
   width: 20%;
@@ -89,7 +89,7 @@ export const FindPasswordWrapper = styled.div`
   justify-content: flex-end;
   font-size: 14px;
   margin-right: 5px;
-  color: ${theme.colors.primary};
+  color: ${common.colors.primary};
   margin-bottom: 20px;
   :hover {
     cursor: pointer;
