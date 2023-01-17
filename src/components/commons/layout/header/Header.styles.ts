@@ -36,7 +36,7 @@ export const HeaderMain = styled.div`
 
   @media (max-width: ${commons.device.mobile}) {
     border: none;
-    height: 140px;
+    height: 100px;
   }
 `;
 export const HeaderMainContent = styled.div`
@@ -61,7 +61,7 @@ export const Menu = styled(MenuOutlined)`
   }
   
   @media (max-width: ${commons.device.mobile}) {
-    font-size: 26px;
+    font-size: 24px;
   }
 `;
 
@@ -96,7 +96,7 @@ export const Logo = styled.div`
   }
 
   @media (max-width: ${commons.device.mobile}) {
-    font-size: 40px;
+    font-size: 30px;
     width: 50%;
   }
 `;

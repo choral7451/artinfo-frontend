@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import commons from "@styles/commons";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -6,6 +7,10 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 60%;
+
+  @media(max-width: ${commons.device.tablet}) {
+    width: 85%;
+  }
 `;
 
 export const Title = styled.div`

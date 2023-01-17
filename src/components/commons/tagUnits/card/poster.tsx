@@ -7,13 +7,13 @@ interface IPoster {
 function Poster(props: IPoster) {
   const Wrapper = styled.div`
     display: inline-block;
-    margin: 30px 10px;
+    margin: 30px 14px;
     padding-bottom: ${props.infoDisplay ? "0" : "10px"};
     border-radius: 10px;
     width: 270px;
     :hover {
       cursor: pointer;
-      opacity: 0.7;
+      opacity: 0.4;
       background-color: rgb(248, 248, 248);
     }
   `;

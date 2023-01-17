@@ -22,7 +22,7 @@ const ColumnNumber = styled.div`
   align-items: center;
   justify-content: center;
   height: 100px;
-  width: 5%;
+  width: 10%;
   @media(max-width: ${commons.device.tablet}) {
     display: none;
   }
@@ -32,8 +32,7 @@ const ColumnTitle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  width: 55%;
+  width: 50%;
   
 
   @media(max-width: ${commons.device.tablet}) {
@@ -92,6 +91,7 @@ const ColumnDate = styled.div`
 
 const Row = styled.div`
   display: flex;
+  align-items: center;
   font-size: 16px;
   border-bottom: 1px solid ${common.colors.primary};
   
@@ -113,7 +113,11 @@ function RecruitBoardBody() {
       <Body>
         <Row>
           <ColumnNumber>1</ColumnNumber>
-          <ColumnTitle>국립합창단 제 5차 정규직 직원 모집국립합창단 제 5차 정규직 직원 모집국립합창단 제 5차 정규직 직원 모집</ColumnTitle>
+          <ColumnTitle
+            style={{ display: "initial", overflow: 'hidden', textOverflow: 'ellipsis',whiteSpace: 'nowrap',
+            }}>
+            국립합창단 제 5차 정규직 직원 모집국립합창단 제 5차 정규직 직원 모집국립합창단 제 5차 정규직 직원 모집
+          </ColumnTitle>
           <ColumnAuthor>임성준</ColumnAuthor>
           <ColumnViews>5</ColumnViews>
           <ColumnDate>2023-01-11</ColumnDate>

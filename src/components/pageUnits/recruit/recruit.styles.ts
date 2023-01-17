@@ -26,29 +26,9 @@ export const BoardControllerWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
-  
-  @media(max-width: ${commons.device.tablet}) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-`;
-
-export const ControllerButtonsWrapper = styled.div`
-  display: flex;
-  
-  
-  @media(max-width: ${commons.device.tablet}) {
-    justify-content: space-around;
-    padding-top: 30px;
-    width: 50%;
-  }
+  margin: 60px 0 20px 0;
 
   @media(max-width: ${commons.device.mobile}) {
-    justify-content: space-around;
-    padding-top: 30px;
-    width: 80%;
+    width: 90%;
   }
 `;

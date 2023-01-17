@@ -10,18 +10,14 @@ function RecruitPresenter() {
   return (
     <S.Wrapper>
       <S.Title>채용</S.Title>
-      <BoardNav
-        nav={["전체", "예술단체", "종교", "기타"]}
-      />
+      <BoardSearch />
       <S.BoardControllerWrapper>
-        <BoardSearch />
-        <S.ControllerButtonsWrapper>
-          <BoardCategory
-            elementArr={["전체", "예술단체", "종교", "기타"]}
-            display={{ pc: "none", tablet: "initial"
-            }}/>
-          <PushSmallButtonMain text={"글쓰기"} onPush={"/recruit/write"} />
-        </S.ControllerButtonsWrapper>
+        <BoardCategory
+          elementArr={[ "전체", "예술단체", "종교", "기타"]}
+          elementAll={false}
+          display={{ pc: "initial", mobile: "initial" }}
+        />
+        <PushSmallButtonMain text={"글쓰기"} onPush={"/recruit/write"} />
       </S.BoardControllerWrapper>
       <RecruitBoardBody />
       <MoreButtonMain text={"더보기"} />

@@ -3,16 +3,20 @@ import BoardNav from "@tagUnits/boards/board-nav";
 import Poster from "@tagUnits/card/poster";
 import BoardSearch from "@tagUnits/boards/board-search";
 import PushSmallButtonMain from "@tagUnits/buttons/push-small-button-main";
+import BoardCategory from "@tagUnits/boards/write-board/board-category";
+import MoreButtonMain from "@tagUnits/buttons/more-button-main";
 
 function ConcertPresenter() {
   return (
     <S.Wrapper>
       <S.Title>공연</S.Title>
-      <BoardNav
-        nav={["전체", "오케스트라", "합창", "앙상블", "솔로", "기타"]}
-      />
+      <BoardSearch />
       <S.BoardControllerWrapper>
-        <BoardSearch />
+        <BoardCategory
+          elementArr={["전체", "오케스트라", "합창", "앙상블", "솔로", "기타"]}
+          elementAll={false}
+          display={{ pc: "initial", mobile: "initial" }}
+        />
         <PushSmallButtonMain text={"글쓰기"} onPush={"/concert/write"} />
       </S.BoardControllerWrapper>
       <S.PosterWrapper>
@@ -22,6 +26,7 @@ function ConcertPresenter() {
         <Poster />
         <Poster />
       </S.PosterWrapper>
+      <MoreButtonMain text={"더보기"} />
     </S.Wrapper>
   );
 }
