@@ -1,7 +1,6 @@
-import * as S from "@src/components/pageUnits/issue/write-issue/write-issue.styles";
+import * as S from "./write-recruit.styles";
 import BoardCategory from "@tagUnits/boards/write-board/board-category";
 import WriteBoard from "@tagUnits/boards/write-board/write-board";
-import {BoardControllerWrapper} from "@src/components/pageUnits/issue/write-issue/write-issue.styles";
 import RequestMediumButtonMain from "@tagUnits/buttons/request-medium-button-main";
 import PushMediumButtonWhite from "@tagUnits/buttons/push-medium-button-white";
 
@@ -20,10 +19,10 @@ function WriteRecruitPresenter() {
         </S.SelectWrapper>
         <S.BoardTitleInput placeholder={'제목을 입력해주세요.'}/>
         <WriteBoard />
-        <BoardControllerWrapper>
-          <RequestMediumButtonMain text={'확인'} marginRight={'20px'}/>
-          <PushMediumButtonWhite text={"취소"} onPush={"/recruit"}/>
-        </BoardControllerWrapper>
+        <S.BoardControllerWrapper>
+          <RequestMediumButtonMain text={'확인'} margin={'10px 20px'}/>
+          <PushMediumButtonWhite text={"취소"} onPush={"/recruit"} margin={'10px 20px'}/>
+        </S.BoardControllerWrapper>
       </S.WriteBoardWrapper>
     </S.Wrapper>
   );

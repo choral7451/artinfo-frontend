@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import { v4 as uuidv4 } from "uuid";
-import { useState } from "react";
-import common from "@styles/commons";
+import { useState} from "react";
 import commons from "@styles/commons";
 
 interface ISelect {
@@ -51,7 +50,7 @@ function BoardCategory(props: ISelect) {
 
   const NavAll = styled.div`
     border-radius: 5px;
-    background-color: ${common.colors.primary};
+    background-color: ${commons.colors.primary};
   `;
 
   const Nav = styled.div`
@@ -67,7 +66,7 @@ function BoardCategory(props: ISelect) {
     width: 100px;
     z-index: 1;
     :hover {
-      border: 1px solid ${common.colors.primary};
+      border: 1px solid ${commons.colors.primary};
       background-color: white;
       color: black;
     }

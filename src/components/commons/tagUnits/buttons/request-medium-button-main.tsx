@@ -4,7 +4,7 @@ import {useRouter} from "next/router";
 
 interface IRequestMediumButtonMain {
   text: string
-  marginRight?: string
+  margin?: string
 }
 
 function RequestMediumButtonMain(props: IRequestMediumButtonMain) {
@@ -14,7 +14,7 @@ function RequestMediumButtonMain(props: IRequestMediumButtonMain) {
     border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
-    margin-right: ${props.marginRight};
+    margin: ${props.margin};
     background-color: ${common.colors.primary};
     border: 1px solid white;
     color: white;

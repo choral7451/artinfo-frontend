@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import commons from "@styles/commons";
 
 interface IPoster {
   infoDisplay?: string;
@@ -16,6 +17,11 @@ function Poster(props: IPoster) {
       opacity: 0.4;
       background-color: rgb(248, 248, 248);
     }
+
+    @media(max-width: 280px) {
+      width: 90%;
+      margin: 30px 0;
+    }
   `;
 
   const Img = styled.img`
@@ -24,6 +30,11 @@ function Poster(props: IPoster) {
     height: 360px;
     width: 270px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);
+
+    @media(max-width: 280px) {
+      height: 300px;
+      width: 210px;
+    }
   `;
 
   const Title = styled.div`

@@ -20,8 +20,8 @@ function WriteEducationPresenter() {
         <S.BoardTitleInput placeholder={'제목을 입력해주세요.'}/>
         <WriteBoard />
         <S.BoardControllerWrapper>
-          <RequestMediumButtonMain text={'확인'} marginRight={'20px'}/>
-          <PushMediumButtonWhite text={"취소"} onPush={"/education"}/>
+          <RequestMediumButtonMain text={'확인'} margin={'10px 20px'}/>
+          <PushMediumButtonWhite text={"취소"} onPush={"/education"} margin={'10px 20px'}/>
         </S.BoardControllerWrapper>
       </S.WriteBoardWrapper>
     </S.Wrapper>

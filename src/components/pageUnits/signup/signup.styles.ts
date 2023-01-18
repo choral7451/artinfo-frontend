@@ -1,17 +1,15 @@
 import styled from "@emotion/styled";
-import common from "@styles/commons";
+import commons from "@styles/commons";
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30%;
-  @media (max-width: 575.98px) {
-    width: 95%;
-  }
-  @media (min-width: 575.98px) and (max-width: 991.98px) {
-    width: 50%;
+  width: 35%;
+ 
+  @media(max-width: ${commons.device.tablet}){
+    width: 85%;
   }
 `;
 
@@ -22,8 +20,11 @@ export const Title = styled.div`
   font-size: 32px;
   font-weight: bold;
   color: black;
-  @media (max-width: 575.98px) {
+
+  @media(max-width: ${commons.device.mobile}){
     padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
   }
 `;
 
@@ -32,17 +33,22 @@ export const InputWrapper = styled.div`
   height: 50px;
   width: 80%;
   margin: 10px 0;
+  
 `;
 
 export const SendVerificationCode = styled.button`
   height: 100%;
   width: 25%;
   margin-left: 5%;
-  border: 1px solid ${common.colors.primary};
+  border: 1px solid ${commons.colors.primary};
   border-radius: 5px;
   :hover {
     color: white;
-    background-color: ${common.colors.primary};
+    background-color: ${commons.colors.primary};
+  }
+
+  @media(max-width: ${commons.device.mobile}){
+    font-size: 10px;
   }
 `;
 
@@ -50,11 +56,15 @@ export const CountNumber = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${common.colors.primary};
+  border: 1px solid ${commons.colors.primary};
   border-radius: 5px;
   margin: 0 3% 0 5%;
   width: 11%;
   font-size: 14px;
+
+  @media(max-width: ${commons.device.mobile}){
+    font-size: 10px;
+  }
 `;
 
 export const  CheckVerificationCode = styled.button `
@@ -64,11 +74,15 @@ export const  CheckVerificationCode = styled.button `
   border-radius: 5px;
   width: 11%;
   color: white;
-  background-color: ${common.colors.primary};
+  background-color: ${commons.colors.primary};
   :hover {
     color: black;
     background-color: white;
-    border: 1px solid ${common.colors.primary};
+    border: 1px solid ${commons.colors.primary};
+  }
+
+  @media(max-width: ${commons.device.mobile}){
+    font-size: 10px;
   }
 `;
 
@@ -107,7 +121,7 @@ export const TermsDetailArrow = styled.div`
   cursor: pointer;
 `;
 
-export const SignupButton = styled.button`
+export const SignupAndCancelButton = styled.button`
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -115,10 +129,10 @@ export const SignupButton = styled.button`
   height: 50px;
   width: 80%;
   border-radius: 5px;
-  background-color: ${common.colors.primary};
+  background-color: ${commons.colors.primary};
   :hover {
     color: black;
     background-color: white;
-    border: 1px solid ${common.colors.primary};
+    border: 1px solid ${commons.colors.primary};
   }
 `;

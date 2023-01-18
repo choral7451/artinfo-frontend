@@ -5,7 +5,7 @@ import {useRouter} from "next/router";
 interface IPushSmallButtonWhite {
   text: string
   onPush: string
-  marginRight?: string
+  margin?: string
 }
 
 function PushMediumButtonWhite(props: IPushSmallButtonWhite) {
@@ -16,7 +16,7 @@ function PushMediumButtonWhite(props: IPushSmallButtonWhite) {
     border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
-    margin-right: ${props.marginRight};
+    margin: ${props.margin};
     
     :hover {
       color: white;

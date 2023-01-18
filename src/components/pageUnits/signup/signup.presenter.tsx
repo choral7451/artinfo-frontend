@@ -1,6 +1,6 @@
 import * as S from "./signup.styles";
 import Input from "@tagUnits/Inputs/Input";
-import {CheckVerificationCode, CountNumber, SignupButton, TermsDetailArrow} from "./signup.styles";
+import {SignupAndCancelButton} from "./signup.styles";
 
 function SignupPresenter() {
   return (
@@ -42,7 +42,8 @@ function SignupPresenter() {
         <S.CheckBox type={"checkbox"} />
         <S.TermsTitle>(선택) 마케팅 수신 동의</S.TermsTitle>
       </S.TermsWrapper>
-      <SignupButton>회원가입</SignupButton>
+      <S.SignupAndCancelButton>회원가입</S.SignupAndCancelButton>
+      <S.SignupAndCancelButton>취소</S.SignupAndCancelButton>
     </S.Wrapper>
   );
 }

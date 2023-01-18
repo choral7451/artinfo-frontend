@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import common from "@styles/commons";
+import commons from "@styles/commons";
 
 interface IInput {
   width: string;
@@ -17,7 +18,7 @@ function Input(props: IInput) {
     border-radius: 5px;
   `;
 
-  const StyledInput = styled.input`
+  const Input = styled.input`
     width: 90%;
     height: 100%;
     font-size: 16px;
@@ -32,11 +33,15 @@ function Input(props: IInput) {
       color: #a1b4cf;
       transition: all 0.3s ease-in-out;
     }
+
+    @media(max-width: ${commons.device.mobile}){
+      font-size: 12px;
+    }
   `;
 
   return (
     <Wrapper>
-      <StyledInput placeholder={props.placeholder} />
+      <Input placeholder={props.placeholder} />
     </Wrapper>
   );
 }

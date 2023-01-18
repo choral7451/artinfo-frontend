@@ -1,5 +1,4 @@
 import * as S from './issue.styles';
-import BoardNav from "@tagUnits/boards/board-nav";
 import MoreButtonMain from "@tagUnits/buttons/more-button-main";
 import IssueBoardBody from "@tagUnits/boards/issue-board-body";
 import BoardSearch from "@tagUnits/boards/board-search";

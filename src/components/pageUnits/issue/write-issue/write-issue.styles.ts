@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import common from "@styles/commons";
+import commons from "@styles/commons";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 60%;
+
+  @media(max-width: ${commons.device.tablet}) {
+    width: 85%;
+  }
 `;
 
 export const Title = styled.div`
@@ -24,7 +28,7 @@ export const WriteBoardWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid ${common.colors.primary};
+  border: 1px solid ${commons.colors.primary};
   padding: 30px 0;
   margin: 70px 0;
 `;
@@ -35,13 +39,17 @@ export const SelectWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  @media(max-width: ${commons.device.mobile}) {
+    justify-content: center;
+  }
 `;
 
 export const SelectLabel = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${common.colors.primary};
+  border: 1px solid ${commons.colors.primary};
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
@@ -53,7 +61,7 @@ export const SelectLabel = styled.div`
 export const BoardTitleInput = styled.input`
   border: none;
   font-size: 20px;
-  border-bottom: 2px solid ${common.colors.primary};
+  border-bottom: 2px solid ${commons.colors.primary};
   width: 90%;
   margin: 50px 0;
   padding: 20px 10px;
@@ -69,4 +77,12 @@ export const BoardTitleInput = styled.input`
   }
 `;
 
-export const BoardControllerWrapper = styled.div``;
+export const BoardControllerWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media(max-width: ${commons.device.mobile}) {
+    flex-direction: column;
+  }
+`;
