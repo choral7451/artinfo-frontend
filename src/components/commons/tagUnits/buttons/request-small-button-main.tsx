@@ -1,25 +1,22 @@
 import styled from "@emotion/styled";
 import common from "@styles/commons";
 
-interface IMoreButtonMain {
+interface IRequestSmallButtonMain {
   text: string
-  width?: string
-  margin?: string
+  marginRight?: string
 }
 
-function MoreButtonMain(props: IMoreButtonMain) {
-  let width = props.width ?? '100%';
-
+function RequestSmallButtonMain(props: IRequestSmallButtonMain) {
   const Button = styled.button`
-  width: ${width};
-  padding: 16px 0;
+  width: 100px;
+  height: 40px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 14px;
   background-color: ${common.colors.primary};
+  margin-right: ${props.marginRight};
   border: 1px solid white;
   color: white;
-  margin: ${props.margin};
   
   :hover {
     background-color: white;
@@ -27,9 +24,10 @@ function MoreButtonMain(props: IMoreButtonMain) {
     color: black;
   }
 `;
+
   return (
-    <Button >{props.text}</Button>
+    <Button>{props.text}</Button>
   );
 }
 
-export default MoreButtonMain;
+export default RequestSmallButtonMain;

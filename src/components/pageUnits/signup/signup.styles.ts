@@ -42,9 +42,11 @@ export const SendVerificationCode = styled.button`
   margin-left: 5%;
   border: 1px solid ${commons.colors.primary};
   border-radius: 5px;
+  background-color: ${commons.colors.primary};
+  color: white; 
   :hover {
-    color: white;
-    background-color: ${commons.colors.primary};
+    color: black;
+    background-color: white;
   }
 
   @media(max-width: ${commons.device.mobile}){
