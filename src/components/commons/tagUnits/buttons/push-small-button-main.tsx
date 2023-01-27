@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import common from "@styles/commons";
 import {useRouter} from "next/router";
+import commons from "@styles/commons";
 
 interface IPushSmallButtonMain {
   text: string
@@ -13,13 +13,13 @@ const Button = styled.button`
   border-radius: 5px;
   font-weight: bold;
   font-size: 14px;
-  background-color: ${common.colors.primary};
+  background-color: ${commons.colors.primary};
   border: 1px solid white;
   color: white;
   
   :hover {
     background-color: white;
-    border: 1px solid ${common.colors.primary};
+    border: 1px solid ${commons.colors.primary};
     color: black;
   }
 `;

@@ -1,11 +1,11 @@
-import * as S from "./detail-recruit.styles";
+import * as S from "./detail-notice.styles";
 import DetailBoardInfo from "@tagUnits/boards/detail-board/detail-board-info";
+import PushSmallButtonMain from "@tagUnits/buttons/push-small-button-main";
 import CommentView from "@tagUnits/card/comment-view";
 import MoreButtonMain from "@tagUnits/buttons/more-button-main";
 import CommentWrite from "@tagUnits/card/comment-write";
-import PushSmallButtonMain from "@tagUnits/buttons/push-small-button-main";
 
-function DetailRecruitPresenter() {
+function DetailNoticePresenter() {
   return (
     <S.Wrapper>
       <S.Title>채용</S.Title>
@@ -41,4 +41,4 @@ function DetailRecruitPresenter() {
   );
 }
 
-export default DetailRecruitPresenter;
+export default DetailNoticePresenter;

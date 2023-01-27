@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import common from "@styles/commons";
+import commons from "@styles/commons";
 
 interface IMoreButtonMain {
   text: string
@@ -25,6 +26,10 @@ function MoreButtonMain(props: IMoreButtonMain) {
     background-color: white;
     border: 1px solid ${common.colors.primary};
     color: black;
+  }
+
+  @media(max-width: ${commons.device.mobile}){
+    width: 100%;
   }
 `;
   return (

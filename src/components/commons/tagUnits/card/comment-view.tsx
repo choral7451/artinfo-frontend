@@ -11,10 +11,14 @@ interface ICommentView {
 }
 
 const CommentViewWrapper = styled.div`
-  border-top: 2px solid ${commons.colors.primary};
   width: 80%;
   margin-top: 160px;
   padding: 20px;
+  background-color: rgb(175, 250, 245);
+  
+  @media(max-width: ${commons.device.mobile}){
+    width: 100%;
+  }
 `;
 
 const CommentViewTopWrapper = styled.div`
@@ -23,9 +27,23 @@ const CommentViewTopWrapper = styled.div`
   align-items: center;
 `;
 
-const CommentUserWrapper = styled.div`
+const CommentInfoWrapper = styled.div`
   display: flex;
   align-items: center;
+  
+  @media(max-width: ${commons.device.mobile}) {
+    flex-direction: column;
+  }
+`;
+
+const CommentUserWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  @media(max-width: ${commons.device.mobile}) {
+    font-size: 14px;
+  }
 `;
 
 const CommentUserIconImage = styled.img`
@@ -37,7 +55,13 @@ const CommentUserName = styled.div`
   margin: 0 10px;
 `;
 
-const CommentCreatedAt = styled.div``;
+const CommentCreatedAt = styled.div`
+  @media(max-width: ${commons.device.mobile}) {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+`;
+
 const CommentViewControllerWrapper = styled.div``;
 
 const CommentContents = styled.div`
@@ -60,7 +84,7 @@ const ReplyButton = styled.button`
 `;
 
 function CommentView(props:ICommentView) {
-  const [commentWriteDisplay, setCommentWriteDisplay] = useState(true);
+  const [commentWriteDisplay, setCommentWriteDisplay] = useState(false);
 
   const onClickSetCommentWriteDisplay = () => {
     setCommentWriteDisplay(prev => !prev);
@@ -69,11 +93,13 @@ function CommentView(props:ICommentView) {
   return (
     <CommentViewWrapper>
       <CommentViewTopWrapper>
-        <CommentUserWrapper>
-          <CommentUserIconImage src={props.commentUserIconImage}/>
-          <CommentUserName>{props.commentUserName}</CommentUserName>
+        <CommentInfoWrapper>
+          <CommentUserWrapper>
+            <CommentUserIconImage src={props.commentUserIconImage}/>
+            <CommentUserName>{props.commentUserName}</CommentUserName>
+          </CommentUserWrapper>
           <CommentCreatedAt>{props.commentCreatedAt}</CommentCreatedAt>
-        </CommentUserWrapper>
+        </CommentInfoWrapper>
         <CommentViewControllerWrapper>
           <ReplyButton onClick={onClickSetCommentWriteDisplay}>{commentWriteDisplay ? '답글 접기' : '답글'}</ReplyButton>
         </CommentViewControllerWrapper>

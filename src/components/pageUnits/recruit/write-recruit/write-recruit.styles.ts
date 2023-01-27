@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   width: 60%;
   
   @media(max-width: ${commons.device.tablet}) {
-    width: 85%;
+    width: 90%;
   }
 `;
 

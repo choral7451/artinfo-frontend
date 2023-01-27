@@ -1,14 +1,14 @@
-import * as S from "./detail-recruit.styles";
+import * as S from "./detail-issue.styles";
 import DetailBoardInfo from "@tagUnits/boards/detail-board/detail-board-info";
+import PushSmallButtonMain from "@tagUnits/buttons/push-small-button-main";
 import CommentView from "@tagUnits/card/comment-view";
 import MoreButtonMain from "@tagUnits/buttons/more-button-main";
 import CommentWrite from "@tagUnits/card/comment-write";
-import PushSmallButtonMain from "@tagUnits/buttons/push-small-button-main";
 
-function DetailRecruitPresenter() {
+function DetailIssuePresenter() {
   return (
     <S.Wrapper>
-      <S.Title>채용</S.Title>
+      <S.Title>이슈</S.Title>
       <S.detailBoardTitle>국립합창단 제 5차 정규직 직원 모집국립합창단 제 5차 정규직 직원 모집국립합창단 제 5차 정국립합창단 제 5차 정규직 직원 모집국립합창단 제 5차 정규직 직원 모집국립합창단 제 5차 정</S.detailBoardTitle>
       <S.DetailBoardInfoWrapper>
         <DetailBoardInfo
@@ -41,4 +41,4 @@ function DetailRecruitPresenter() {
   );
 }
 
-export default DetailRecruitPresenter;
+export default DetailIssuePresenter;

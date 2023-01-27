@@ -13,11 +13,13 @@ function CommentWrite(props: ICommentWrite) {
 
   const WriteCommentWrapper = styled.div`
     display: ${display};
-    border-top: 1px solid ${commons.colors.primary};
-    border-bottom: 2px solid ${commons.colors.primary};
-    margin-top: 20px;
-    padding: 20px 0;
+    margin-top: 40px;
     width: ${width};
+    background-color: white;
+
+    @media(max-width: ${commons.device.mobile}){
+      width: 100%;
+    }
 `;
 
   const WriteCommentTextAreaWrapper = styled.div`
