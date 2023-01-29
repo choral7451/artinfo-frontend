@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 import commons from "@styles/commons";
+import common from "@styles/commons";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +29,7 @@ export const Title = styled.div`
   }
 `;
 
-export const InputWrapper = styled.div`
+export const FieldWrapper = styled.div`
   display: flex;
   height: 50px;
   width: 80%;
@@ -36,7 +37,49 @@ export const InputWrapper = styled.div`
   
 `;
 
-export const SendVerificationCode = styled.button`
+export const InputWrapperSmall = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border: 1px solid ${common.colors.primary};
+  border-radius: 5px;
+`;
+
+export const InputWrapperFull = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid ${common.colors.primary};
+  border-radius: 5px;
+`;
+
+export const Input = styled.input`
+  width: 90%;
+  height: 100%;
+  font-size: 16px;
+  border: none;
+  :focus {
+    outline: none;
+  }
+  :focus::placeholder {
+    color: transparent;
+  }
+  ::placeholder {
+    color: #a1b4cf;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @media(max-width: ${commons.device.mobile}){
+    font-size: 12px;
+  }
+`;
+
+export const VerifyButton = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 25%;
   margin-left: 5%;
@@ -45,6 +88,7 @@ export const SendVerificationCode = styled.button`
   background-color: ${commons.colors.primary};
   color: white; 
   :hover {
+    cursor: pointer;
     color: black;
     background-color: white;
   }
@@ -123,7 +167,7 @@ export const TermsDetailArrow = styled.div`
   cursor: pointer;
 `;
 
-export const SignupAndCancelButton = styled.button`
+export const SignupButton = styled.button`
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -133,6 +177,26 @@ export const SignupAndCancelButton = styled.button`
   border-radius: 5px;
   background-color: ${commons.colors.primary};
   :hover {
+    color: black;
+    background-color: white;
+    border: 1px solid ${commons.colors.primary};
+  }
+`;
+
+export const CancelButton = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+  height: 50px;
+  width: 80%;
+  border-radius: 5px;
+  background-color: ${commons.colors.primary};
+  :hover {
+    cursor: pointer;
     color: black;
     background-color: white;
     border: 1px solid ${commons.colors.primary};
