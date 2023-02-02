@@ -470,6 +470,11 @@
   "resolved" "https://registry.npmjs.org/@types/uuid/-/uuid-9.0.0.tgz"
   "version" "9.0.0"
 
+"@types/validator@^13.7.11":
+  "integrity" "sha512-WqTos+CnAKN64YwyBMhgUYhb5VsTNKwUY6AuzG5qu9/pFZJar/RJFMZBXwX7VS+uzYi+lIAr3WkvuWqEI9F2eg=="
+  "resolved" "https://registry.npmjs.org/@types/validator/-/validator-13.7.11.tgz"
+  "version" "13.7.11"
+
 "@typescript-eslint/parser@^5.42.0":
   "integrity" "sha512-1mxNA8qfgxX8kBvRDIHEzrRGrKHQfQlbW6iHyfHYS0Q4X1af+S6mkLNtgCOsGVl8+/LUPrqdHMssAemkrQ01qg=="
   "resolved" "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-5.48.0.tgz"
@@ -3099,6 +3104,11 @@
   "integrity" "sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg=="
   "resolved" "https://registry.npmjs.org/uuid/-/uuid-9.0.0.tgz"
   "version" "9.0.0"
+
+"validator@^13.7.0":
+  "integrity" "sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw=="
+  "resolved" "https://registry.npmjs.org/validator/-/validator-13.7.0.tgz"
+  "version" "13.7.0"
 
 "warning@^4.0.2":
   "integrity" "sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w=="

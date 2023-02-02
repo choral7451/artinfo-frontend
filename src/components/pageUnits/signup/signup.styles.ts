@@ -76,7 +76,7 @@ export const Input = styled.input`
   }
 `;
 
-export const VerifyButton = styled.div`
+export const MiddleSizeButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +86,7 @@ export const VerifyButton = styled.div`
   border: 1px solid ${commons.colors.primary};
   border-radius: 5px;
   background-color: ${commons.colors.primary};
+  font-size: 14px;
   color: white; 
   :hover {
     cursor: pointer;
@@ -113,16 +114,18 @@ export const CountNumber = styled.div`
   }
 `;
 
-export const  CheckVerificationCode = styled.button `
+export const VerifyEmail = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   width: 11%;
   color: white;
+  font-size: 14px;
   background-color: ${commons.colors.primary};
   :hover {
     color: black;
+    cursor: pointer;
     background-color: white;
     border: 1px solid ${commons.colors.primary};
   }

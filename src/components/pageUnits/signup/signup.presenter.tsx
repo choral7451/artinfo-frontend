@@ -1,7 +1,7 @@
 import * as S from "./signup.styles";
-import Input from "@tagUnits/Inputs/Input";
 import {ISignupPresenter} from "@src/components/pageUnits/signup/signyp.types";
 import PushButtonMain from "@tagUnits/buttons/push-button-main";
+import {MiddleSizeButton} from "./signup.styles";
 
 function SignupPresenter(props: ISignupPresenter) {
   return (
@@ -9,16 +9,16 @@ function SignupPresenter(props: ISignupPresenter) {
       <S.Title>회원가입</S.Title>
       <S.FieldWrapper>
         <S.InputWrapperSmall>
-          <S.Input placeholder={"이메일을 입력해주세요."} />
+          <S.Input id='email' placeholder={"이메일을 입력해주세요."} onChange={props.onChange}/>
         </S.InputWrapperSmall>
-        <S.VerifyButton onClick={props.verifyEmail}>인증번호 전송</S.VerifyButton>
+        <S.MiddleSizeButton onClick={props.sendVerificationCode}>인증번호 전송</S.MiddleSizeButton>
       </S.FieldWrapper>
       <S.FieldWrapper>
         <S.InputWrapperSmall>
-          <S.Input placeholder={"인증번호를 입력해주세요."} />
+          <S.Input id='verificationCode' placeholder={"인증번호를 입력해주세요."} onChange={props.onChange}/>
         </S.InputWrapperSmall>
         <S.CountNumber>180</S.CountNumber>
-        <S.CheckVerificationCode>인증</S.CheckVerificationCode>
+        <S.VerifyEmail onClick={props.verifyEmail}>인증</S.VerifyEmail>
       </S.FieldWrapper>
       <S.FieldWrapper>
         <S.InputWrapperFull>
@@ -29,7 +29,7 @@ function SignupPresenter(props: ISignupPresenter) {
         <S.InputWrapperSmall>
           <S.Input placeholder={"닉네임을 입력해주세요."} { ...props.register('nick_name')}/>
         </S.InputWrapperSmall>
-        <S.VerifyButton>중복 확인</S.VerifyButton>
+        <S.MiddleSizeButton>중복 확인</S.MiddleSizeButton>
       </S.FieldWrapper>
       <S.FieldWrapper>
         <S.InputWrapperFull>
